@@ -1,0 +1,8 @@
+write a blog on the different between document &window object?
+answer:
+
+According to the current web page context, the window object represents the browser window where your document is displayed.
+The document object represents the HTML document loaded in that window. 
+The window object has many useful properties like the location object and the setTimeout function.
+The document holds a model representation of the currently loaded document (such as title, anchors, etc). 
+A document is an object inside the window object and we use a document object for manipulation inside the document.
