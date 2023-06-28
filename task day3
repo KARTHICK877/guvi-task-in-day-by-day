@@ -1,0 +1,216 @@
+how to compare two JSON have the same properties without order  ?
+
+
+let obj1 = {name: "person 1", age: 5};
+let obj2 = {age: 5, name: "person 1"};
+
+if(JSON.stringify(obj1) === JSON.stringify(obj2)) {
+    console.log("The two objects are equal");
+} else {
+    console.log("The two objects are not equal");
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2) DISPLAY THE CONTRY FLAG IN CONSOLE  ?
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var arrObj= JSON.parse(xhr.responseText);
+            for (var i = 0; i < arrObj.length; i++) {
+            console.log(arrObj[i].flag);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) PRINT ALL CONUTRERS NAME, REGION , SUB-REGION , POPULATION ?
+
+
+//PRINT NAME?
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var arrObj= JSON.parse(xhr.responseText);
+            for (var i = 0; i < arrObj.length; i++) {
+            console.log(arrObj[i].name);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//print REGION?
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var arrObj= JSON.parse(xhr.responseText);
+            for (var i = 0; i < arrObj.length; i++) {
+            console.log(arrObj[i].region);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//PRINT SUB REGION?
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var arrObj= JSON.parse(xhr.responseText);
+            for (var i = 0; i < arrObj.length; i++) {
+            console.log(arrObj[i].subregion);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ //PRINT POPULATION ?
+
+
+<html>
+  <head>
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <script>
+      //Create a new XMLHttpRequest object
+      var xhr = new XMLHttpRequest();
+
+      //Define HTTP method and URL
+      var method = "GET";
+      var url = "https://restcountries.com/v3.1/all";
+
+      //Open the request
+      xhr.open(method, url);
+
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          //Request was successful
+          console.log(xhr.responseText);
+          var arrObj= JSON.parse(xhr.responseText);
+            for (var i = 0; i < arrObj.length; i++) {
+            console.log(arrObj[i].flag);
+          }
+        } else {
+          //Request failed
+          console.log("Request failed", xhr.status);
+        }
+      };
+
+      //send the request
+      xhr.send();
+    </script>
+  </body>
+</html>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
