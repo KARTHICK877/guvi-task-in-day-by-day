@@ -1,0 +1,77 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Do the below programs in anonymous function?
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+a ) Print odd numbers in an array?
+
+
+var oddnumber=   function(array){
+ for(var i = 0 ; i< array.length ; i++){
+ if(array[i]%2!=0){
+ console.log(array[i])
+ } 
+ }
+ }
+ 
+ 
+ oddnumber([1,2,3,4,5,6,7,8,9,10]);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+b)Convert all the strings to title caps in a string array?
+
+
+var stringArray = ["hello", "world", "example", "code"];
+
+var titleCapsArray = stringArray.map(function(string) {
+  var titleCaseString = string.charAt(0).toUpperCase() + string.slice(1);
+  return titleCaseString;
+});
+
+console.log(titleCapsArray);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+c) Sum of all numbers in an array?
+
+  
+var number=[1,2,3,4,5,6]
+var add=   function(array){
+var sum = 0;
+for(var i = 0 ; i< array.length ; i++){
+ sum = sum + array[i];
+ }
+ return sum;
+ }
+console.log(add(number))
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+d) Return all the prime numbers in an array?
+
+ 
+ const prime=[1,2,3,4,5,6,7,8,9,10]
+ var a =function(numArray){
+ numArray = numArray.filter((number) => {
+                        for (var i = 2; i <= Math.sqrt(number); i++) {
+if (number % i === 0) return false;
+ }
+return true;
+});
+console.log(numArray);
+}
+ console.log(a(prime));
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+e) Return all the palindromes in an array?
+
+ const stringArray = ["racecar", "level", "hello", "madam", "noon"];
+ const getPalindromesArray = function(arr) {
+ return arr.filter(function(str) {
+ const reversedStr = str.split("").reverse().join("");
+ return str=== reversedStr
+});
+};
+ console.log(getPalindromesArray(stringArray)); 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+f)Return median of two sorted arrays of the same size?
+
+
+
+
+
+
+
+
