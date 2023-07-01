@@ -1,0 +1,102 @@
+for give JSON iterate over all for loops (forloop , for..in, for..of, for..each)?
+
+forloop?
+
+var json=[{"name":"karthick","age":"19","mail":"kmass8754@gmail.com",}];
+for(var i=0;i<json.length;i++){var obj=json[i];
+console.log(obj.name)
+console.log(obj.age);
+console.log(obj.mail);
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for in?
+
+var jsonstr= `{
+"name":"karthick",
+"age":30,
+"city":"chennai",
+"mail":"kmass8754@gmail.com"
+
+}`;
+const data=JSON.parse(jsonstr);
+//for in
+for(let key in  data){
+const value=data[key];
+console.log(`key: ${key},value:${value}`);
+}
+-------------------------------------------------------------------------------------------------------------------------
+for..of
+
+var jsonstr= `{
+"name":"karthick",
+"age":30,
+"city":"chennai",
+"mail":"kmass8754@gmail.com"
+
+}`;
+const data=JSON.parse(jsonstr);
+//for ..of
+for(let [key,value] of Object.entries(data)){
+console.log(`key: ${key},value:${value}`);
+}
+-------------------------------------------------------------------------------------------------------------------------
+for Each?
+
+var jsonstr= `{
+"name":"karthick",
+"age":30,
+"city":"chennai",
+"mail":"kmass8754@gmail.com"
+
+}`;
+const data=JSON.parse(jsonstr);
+//for ..of
+ Object.entries(data).forEach(([key, value])=>{
+console.log(`key: ${key},value:${value}`);
+});
+-------------------------------------------------------------------------------------------------------------------------
+2 create your own resume data in json format?
+
+var resume=[{"Name":"karthick",
+"qualification":"Bsc,cs",
+"email":"kmasas8754@gmail.com",
+"Experience":"fresher",
+"Address":"abc",
+"Domain":"Full stack development",}];
+resume.forEach(function() {
+    console.log(resume);
+});
+  
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
